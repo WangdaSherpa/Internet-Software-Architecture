@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Phudu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+.header {
+    background: #F0EEED;
+    display: flex;
+    height: 15vh;
+    font-family: 'Gloock', serif;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #FFB84C;
+    font-size: 3em;
+}
+.nav {
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #181D31;
+    font-size: 1.6em;
+}
+.search {
+    width: 15%;
+    margin: auto 0;
+}
+
+.search input {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2b292975;
+}
+
+.home {
+    background: url(images/background.jpg);
+    background-size: cover;
+    min-height: 100%;
+}
+.home h1 {
+    font-family: 'Lobster', cursive;
+    padding-top: 100px;
+    padding-left: 90px;
+}
+
+.home p {
+    font-size: 1.4em;
+    color: #060047;
+    font-family: 'Lobster', cursive;
+    padding-top: 100px;
+    padding-left: 120px;
+}
+
+.about {
+    min-height: 100%;
+    display: flex;
+    background-color: #000000;
+    color: #ccc;
+}
+
+.about_left {
+    width: 50%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_left img {
+    width: 400px;
+    height: 360px;
+}
+.about_right {
+    width: 50%;
+    margin: auto;
+    margin-right: 40px;
+}
+
+.about_right h2 {
+    margin-bottom: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 2em;
+}
+
+.about_right p {
+    text-align:justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.services {
+    min-height: 100%;
+    background-color: #183A1D;
+}
+
+.services h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 80px;
+    color: #F7F7F7;
+    letter-spacing: 4px;
+}
+
+.underline {
+    width: 300px;
+    height: 5px;
+    background-color: #F2CD5C;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.contact {
+    min-height: 100%;
+    background-color: #EAE0DA;
+}
+.contact h1 {
+    text-align: center;
+    padding-top: 80px;
+    color: #FF8B13;
+}
+
+.contactunderline {
+    background-color: #820000;
+}
+
+.form {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-top: 40px;
+    font-size: 1.4em;
+    font-family: 'Phudu', cursive;
+}
+
+.form form label {
+    display: block;
+    padding: 10px 0 2px 0;
+}
+
+.form form input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+.form form button {
+    width: 100%;
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 5px;
+    background-color: #8B9A46;
+    border-radius: 15px;
+    color: #EEEEEE;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    border: 1px solid #8B9A46;
+    letter-spacing: 3px;
+    transition: 0.5s;
+}
+
+.form form button:hover {
+    background-color: #EEEEEE;
+    color: #000000;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.footer {
+    min-height: 20%;
+}
+
+.footer h3 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #181D31;
+    font-size: 1.2em;
+    display: block;
+}
+
+.twitter {
+    width: 50%;
+    height: 50px;
+}
+
+.footer .twitter img {
+    height: 50px;
+    width: 50px;
+}
+
+.twitter a {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px
+}
+
+.footer .facebook img {
+    height: 45px;
+    width: 50px;
+}
+
+
