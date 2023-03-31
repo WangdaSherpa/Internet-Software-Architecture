@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GitHub Repositories</title>
+</head>
+<body>
+  <h1>GitHub Repositories</h1>
+  <label for="username">Enter GitHub username:</label>
+  <input type="text" id="username">
+  <button onclick="search()">Search</button>
+  <ul id="repositories"></ul>
+
+  <script>
+    function search() {
+      const username = document.getElementById("username").value;
+      const repositories = document.getElementById("repositories");
+
+      repositories.innerHTML = "";
+
+      fetch(`https://api.github.com/users/${username}/repos`)
+        .then(response => response.json())
+        .then(data => {
+          data.forEach(repo => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
+            a.href = repo.html_url;
+            a.textContent = repo.name;
+            li.appendChild(a);
+            repositories.appendChild(li);
+          });
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    }
+  </script>
+</body>
+</html>
